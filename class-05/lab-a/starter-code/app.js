@@ -81,42 +81,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-// let total= 0;
-// function sum(a) { //eslint-disable-line
-//   total += a ;
-// }
-//   // testSum(4, 7);
+
+let testArray = [2, 3, 4]; //eslint-disable-line
+
+function sumArray(sumArr) { //eslint-disable-line
+
+  
+    let total =sum((sumArr[0]+sumArr[1]),sumArr[2]);
+  //  let totalMul= multiply((sumArr[0]+sumArr[1]),sumArr[2]);
+  
+  return [total , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`];
+}
 
 
-//   let totalMul= 0;
-//   function multiply(a) { //eslint-disable-line
-//     totalMul *= a ;
-//   }
-//     // testMultiply(5,9);
-    
-
-
-
-// let testArray = [2, 3, 4]; //eslint-disable-line
-
-// function sumArray(sumArr) { //eslint-disable-line
-
-//   for(let i=0; i<sumArr.length; i++){
-//     testSum(sumArr[i]);
-//     testMultiply(sumArr[i]);
-//   }
-//   return [total , totalMul, `2,3,4 was passed in as an array of numbers, and ${total} is their sum.`];
-// }
-
-
-
-
-//   let totalMul= 0;
-//   function multiply(a) { //eslint-disable-line
-//     totalMul *= a ;
-//   }
-//     // testMultiply(5,9);
-    
 
 // let testArray = [2, 3, 4]; //eslint-disable-line
 
@@ -131,7 +108,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
