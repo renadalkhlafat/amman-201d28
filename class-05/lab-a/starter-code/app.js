@@ -53,16 +53,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // // Write your code here
-// function sumAndMultiply(a, b, c) { //eslint-disable-line
-//   let totalSum =sum((a+b),c);
-//   let totalMul =multiply((a*b),c);
-// //  let totalSum =a+b+c;
-// //  let totalMul =a*b*c;
-//  return[totalSum, totalMul, `${a} and ${b} and ${c} sum to ${totalSum}.`,`The product of ${a} and ${b} and ${c} is ${totalMul}.`]
-// }
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let totalSum =sum((a+b),c);
+  let totalMul =multiply((a*b),c);
+ return[totalSum, totalMul, `${a} and ${b} and ${c} sum to ${totalSum}.`,`The product of ${a} and ${b} and ${c} is ${totalMul}.`]
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -78,22 +76,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-// let testArray = [2, 3, 4]; //eslint-disable-line
+let testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { //eslint-disable-line
 
   
-//     let total =sum((sumArr[0]+sumArr[1]),sumArr[2]);
-//   //  let totalMul= multiply((sumArr[0]+sumArr[1]),sumArr[2]);
-  
-//   return [total , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`];
-// }
+    let total =sum((sumArr[0]+sumArr[1]),sumArr[2]);  
+  return [total , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`];
+}
 
 
 
 // let testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { //eslint-disable-line
 
 //   for(let i=0; i<sumArr.length; i++){
 //     testSum(sumArr[i]);
