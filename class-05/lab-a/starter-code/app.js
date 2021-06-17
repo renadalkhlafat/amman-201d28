@@ -78,22 +78,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-// let testArray = [2, 3, 4]; //eslint-disable-line
+let testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { //eslint-disable-line
 
   
-//     let total =sum((sumArr[0]+sumArr[1]),sumArr[2]);
-//   //  let totalMul= multiply((sumArr[0]+sumArr[1]),sumArr[2]);
-  
-//   return [total , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`];
-// }
+    let total =sum((sumArr[0]+sumArr[1]),sumArr[2]);  
+  return [total , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`];
+}
 
 
 
 // let testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { //eslint-disable-line
 
 //   for(let i=0; i<sumArr.length; i++){
 //     testSum(sumArr[i]);
