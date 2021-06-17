@@ -10,7 +10,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
   let total = a+b;
-  return [total, `The sum of ${a} and ${b} and ${c} is ${total}.`];
+  return total;
+  // return [total, `The sum of ${a} and ${b} and ${c} is ${total}.`];
 }
 // // console.log( sum(4, 11));
 
@@ -33,7 +34,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
 let total= a*b ;
-return[total, `The product of ${a} and ${b} and ${c} is ${total}.`]
+return total;
+// return[total, `The product of ${a} and ${b} and ${c} is ${total}.`]
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -53,16 +55,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // // Write your code here
-// function sumAndMultiply(a, b, c) { //eslint-disable-line
-//   let totalSum =sum((a+b),c);
-//   let totalMul =multiply((a*b),c);
-// //  let totalSum =a+b+c;
-// //  let totalMul =a*b*c;
-//  return[totalSum, totalMul, `${a} and ${b} and ${c} sum to ${totalSum}.`,`The product of ${a} and ${b} and ${c} is ${totalMul}.`]
-// }
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let totalSum =sum((a+b),c);
+  let totalMul =multiply((a*b),c);
+ return[totalSum, totalMul, `${a} and ${b} and ${c} sum to ${totalSum}.`,`The product of ${a} and ${b} and ${c} is ${totalMul}.`]
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
