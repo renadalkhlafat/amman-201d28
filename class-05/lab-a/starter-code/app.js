@@ -10,8 +10,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
   let total = a+b;
-  return total;
-  // return [total, `The sum of ${a} and ${b} and ${c} is ${total}.`];
+  return [total, `The sum of ${a} and ${b} and ${c} is ${total}.`];
 }
 // // console.log( sum(4, 11));
 
@@ -34,8 +33,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
 let total= a*b ;
-return total;
-// return[total, `The product of ${a} and ${b} and ${c} is ${total}.`]
+return[total, `The product of ${a} and ${b} and ${c} is ${total}.`]
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -58,7 +56,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   let totalSum =sum((a+b),c);
   let totalMul =multiply((a*b),c);
- return[totalSum, totalMul, `${a} and ${b} and ${c} sum to ${totalSum}.`,`The product of ${a} and ${b} and ${c} is ${totalMul}.`]
+ return[totalSum[0], totalMul[0], `${a} and ${b} and ${c} sum to ${totalSum[0]}.`,`The product of ${a} and ${b} and ${c} is ${totalMul[0]}.`]
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -84,7 +82,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
   
     let total =sum((sumArr[0]+sumArr[1]),sumArr[2]);  
-  return [total , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`];
+  return [total[0] , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total[0]} is their sum.`];
 }
 
 
@@ -119,7 +117,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
   let total =multiply((multArr[0]*multArr[1]),multArr[2]);
-  return[total, `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${total}.`]
+  return[total[0], `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${total[0]}.`]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -151,7 +149,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   for (let i = 0; i < dynamicArray.length; i++) {
     m = multiply(m,dynamicArray[i]);
   }
-  return [m, `The numbers ${[...dynamicArray]} have a product of ${m}.`];
+  return [m[0], `The numbers ${[...dynamicArray]} have a product of ${m[0]}.`];
 }
 // // console.log(testMultiplyAnyArray(testDynamicArray));
 
